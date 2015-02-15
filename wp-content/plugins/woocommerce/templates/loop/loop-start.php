@@ -8,4 +8,4 @@
  */
 ?>
 <!-- <ul class="products"> -->
-<div class="grid">
+<div class="grid shop-grid">

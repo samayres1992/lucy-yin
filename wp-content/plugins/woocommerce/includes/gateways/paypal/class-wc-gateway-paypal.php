@@ -146,10 +146,10 @@ class WC_Gateway_Paypal extends WC_Payment_Gateway {
 		if ( is_array( $icon ) ) {
 			$icon_html = '';
 			foreach ( $icon as $i ) {
-				$icon_html .= '<img src="' . esc_attr( $i ) . '" alt="PayPal Acceptance Mark" />';
+				// $icon_html .= '<img src="' . esc_attr( $i ) . '" alt="PayPal Acceptance Mark" />';
 			}
 		} else {
-			$icon_html = '<img src="' . esc_attr( apply_filters( 'woocommerce_paypal_icon', $icon ) ) . '" alt="PayPal Acceptance Mark" />';
+			// $icon_html = '<img src="' . esc_attr( apply_filters( 'woocommerce_paypal_icon', $icon ) ) . '" alt="PayPal Acceptance Mark" />';
 		}
 
 		if ( $link ) {

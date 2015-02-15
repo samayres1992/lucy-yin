@@ -114,6 +114,11 @@ INDEX
     padding-bottom: 10px;
     color: #fff;
   }
+  #top ul.nav > li.checkout a {
+      padding-top: 14px;
+      padding-bottom: 10px;
+      color: #fff;
+  }
   #top ul.nav > li a:hover {
     background: rgba(0,0,0,0.2);
     text-decoration: none;
@@ -141,7 +146,6 @@ INDEX
   }
   #top .wc-nav li.checkout {
     display: inline-block;
-    padding: 0 1em 0 0;
   }
   #top .wc-nav li.checkout a:before {
     font-family: 'WebSymbolsRegular';
@@ -180,7 +184,7 @@ INDEX
 }
 #top .wc-nav li.cart a:hover {
     padding-top: 12px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     border-bottom: 1px solid #11bad3;
     }
   #top .wc-nav li.cart a .contents {
@@ -705,6 +709,9 @@ INDEX
   .single-product .images {
     width: 48%;
     float: left;
+    height: 400px;
+    width: 384px;
+    margin-left: 20px;
   }
   .single-product .summary {
     width: 48%;
@@ -863,9 +870,6 @@ INDEX
     margin-bottom: 0;
   }
   /* 7.3 Cart */
-  table.cart {
-    margin-bottom: 2.618em;
-  }
   table.cart .product-remove,
   table.cart .product-thumbnail,
   table.cart .product-price {
@@ -903,19 +907,12 @@ INDEX
     font-size: .857em;
     float: left;
   }
-  .cart-collaterals .cart_totals {
-    float: right;
-  }
   .cart-collaterals .shipping_calculator {
     float: right;
     clear: right;
   }
   .cart-collaterals .cross-sells ul.products li.product {
     width: 48%;
-  }
-  /* 7.4 Checkout */
-  .checkout #order_review {
-    padding: 1.618em;
   }
   .checkout #shiptobilling {
     float: right;
@@ -977,6 +974,7 @@ INDEX
     z-index: 9999999;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
   .homepage-banner h1 {
     font-size: 2.244em;
