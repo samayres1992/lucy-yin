@@ -63,7 +63,7 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 	                
 		                <h1><?php the_title(); ?></h1>
 		                
-	                	<?php woo_post_meta(); ?>
+                        <?php echo the_content(); ?>
 	                	
 	                </header>
 	                

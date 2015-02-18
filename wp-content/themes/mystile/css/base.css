@@ -198,3 +198,14 @@ a.bttn {
 	text-align: center;
 	max-width: none;
 }
+
+#loadMore {
+	margin: 0 auto 25px;
+	text-align: center;
+	padding: 15px;
+	font-family: Helvetica, Arial;
+	background-color: rgba(0,0,0,0.4);
+	cursor: pointer;
+	width: 150px;
+	border-radius: 5px;
+}

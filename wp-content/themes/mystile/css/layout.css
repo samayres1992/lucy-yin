@@ -634,10 +634,11 @@ INDEX
   }
   #main {
     width: 100%;
+    min-height: 600px;
   }
   #content {
       background-color: #1f2831;
-      background-image: url('/wp-content/uploads/2015/02/bg.jpg');
+      background-image: url('/wp-content/themes/mystile/images/bg.jpg');
       background-repeat: no-repeat;
       background-position-x: 50%;
   }
@@ -711,11 +712,14 @@ INDEX
     float: left;
     height: 400px;
     width: 384px;
-    margin-left: 20px;
+    margin-left: 10%;
+    margin-top: 100px;
+
   }
   .single-product .summary {
     width: 48%;
     float: right;
+    margin-top: 100px;
   }
   .single-product .woocommerce_tabs,
   .single-product .woocommerce-tabs {
@@ -972,14 +976,5 @@ INDEX
   .ie7 #header {
     position: relative;
     z-index: 9999999;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1025px) {
-  .homepage-banner h1 {
-    font-size: 2.244em;
-  }
-  .homepage-banner .description {
-    font-size: 1.387em;
   }
 }

@@ -37,7 +37,7 @@ INDEX
 
 /*----------------------*/
 
-@media only screen and (min-width: 768px) {
+
 	html.boxed {
 		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGAwBuKzQAwGjDAGNgGwSgwVAFCGAgUGpiTrAAAAAElFTkSuQmCC) @bg_light - #111;
 		body {
@@ -121,6 +121,7 @@ INDEX
 					color: @color_body + #333;
 					&:hover {
 						background: @bg_light;
+						padding-bottom: 8px;
 						text-decoration: none;
 						color: @color_body;
 					}
@@ -946,16 +947,3 @@ INDEX
 			z-index: 9999999;
 		}
 	}
-
-}
-
-@media only screen and (min-width: 768px) and (max-width:1025px) {
-	.homepage-banner {
-		h1 {
-			font-size:2.244em;
-		}
-		.description {
-			font-size: 1.387em;
-		}
-	}
-}
