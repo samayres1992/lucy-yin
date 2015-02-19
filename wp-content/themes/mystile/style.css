@@ -3471,3 +3471,125 @@ table.cart td.actions {
 .grid .row div{ 
     display:none;
 }
+
+section.contact-form {
+    display: none;
+    z-index: 999;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 200px;
+    left: 300px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(129, 168, 193, 0.5);
+}
+
+li#menu-item-96 {
+    width: 140px;
+    text-align: center;
+    padding: 0!important;
+    margin: 0 10px!important;
+    color: transparent!important;
+}
+
+.wpcf7-form {
+    position: fixed;
+    left: 35%;
+    left: calc(50% - 203px);
+    top: 100px;
+    padding: 15px;
+    background-color: rgba(0,0,0, 0.75);
+    border-radius: 5px;
+    color: #fff;
+    font-family: Helvetica, Arial;
+    text-align: left;
+}
+
+
+.wpcf7-text {
+    max-width: 418px;
+}
+
+.wpcf7-textarea {
+    max-height: 120px;
+    max-width: 418px;
+}
+
+.wpcf7-submit {
+    float: right;
+}
+
+span.email-address, span.request {
+    margin-left: 5px;
+}
+
+span.x {
+    position: fixed;
+    left: 35%;
+    left: calc(50% + 268px);
+    top: 60px;
+    font-size: 32px;
+    color: #fff;
+    background-color: rgba(0,0,0, 0.4);
+    width: 7px 9px;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 38px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 12px;
+}
+
+.wpcf7-validation-errors {
+    width: 398px!important;
+    background-color: rgba(219, 41, 41, 0.5);
+    border-radius: 5px;
+    border: none!important;
+    padding: 10px!important;
+    margin: 60px 0 0 5px!important;
+}
+
+.wpcf7-mail-sent-ok {
+    width: 398px!important;
+    background-color: rgba(63, 220, 84, 0.25)!important;
+    border-radius: 5px;
+    border: none!important;
+    padding: 10px!important;
+    margin: 60px 0 0 5px!important;
+}
+
+li#menu-item-96:hover {
+    background-color: transparent;
+    background: transparent!important;
+    background-color: transparent!important;
+    border: none!important;
+}
+
+
+li#menu-item-96 a {
+    background-color: rgb(63, 220, 8);
+    background-color: rgba(63, 220, 84, 0.25)!important;
+    padding: 5px 5px 4px!important;
+    border-radius: 5px!important;
+    margin-top: 7px!important;
+    -webkit-transition: .50s ease-out;
+    -o-transition: .50s ease-out;
+    transition: .50s ease-out;
+}
+
+li#menu-item-96 a:hover {
+    background-color: rgb(63, 220, 8);
+    background: rgba(63, 220, 84, 0.55)!important;
+    background-color: rgba(63, 220, 84, 0.55)!important;
+    padding: 5px 5px 4px!important;
+    border-radius: 5px!important;
+    margin-top: 7px!important;
+    border: none!important;
+    -webkit-transition: .50s ease-in;
+    -o-transition: .50s ease-in;
+    transition: .50s ease-in;
+}

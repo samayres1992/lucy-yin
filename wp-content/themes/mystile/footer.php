@@ -1,3 +1,8 @@
+<section class="contact-form">
+    <span class="x">&#10006;</span>
+    <?php echo do_shortcode( '[contact-form-7 id="84" title="Contact Form"]'); ?>
+</section>
+
 <footer>
     <div class="creds">
         <i class="icon-heart heart"></i>
