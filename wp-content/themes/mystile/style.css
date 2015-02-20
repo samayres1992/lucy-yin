@@ -3053,7 +3053,6 @@ section.landing{
 	background: -ms-linear-gradient(top,  #57d5f7 0%,#56d9f4 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #57d5f7 0%,#56d9f4 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57d5f7', endColorstr='#56d9f4',GradientType=0 ); /* IE6-8 */
-    border-bottom: 2px solid #fff;
 }
 
 textarea.input-text{
@@ -3200,6 +3199,7 @@ section.entry {
     height: 41px;
     padding: 0;
     padding: 11px 0 0 0;
+    border-top: 2px solid #fff;
 }
 
 #mywork {
@@ -3289,16 +3289,22 @@ footer {
     border-top: 3px solid #fff;
 }
 
-footer h2 a {
+footer h2 {
     display: block;
     font-family: Helvetica, Arial;
     /* color: #fff; */
     background-color: rgba(255,255,255,0.05);
-    padding: 0px;
+    padding: 10px;
     font-size: 18px;
     width: 140px;
     margin: 0 auto;
     border-radius: 5px;
+}
+
+footer h2 a {
+    color: #fff!important;
+    border-bottom: 1px dotted rgba(255,255,255, 0.5);
+    padding-bottom: 2px;
 }
 
 .shop-products img{
@@ -3362,7 +3368,8 @@ span.price {
 footer .creds a {
     text-decoration: none;
     font-family: Helvetica, Arial;
-    border-bottom: none;
+    color: #fff;
+    border-bottom: 1px dotted rgba(255,255,255, 0.5);
 }
 
 footer .creds span {
