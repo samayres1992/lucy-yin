@@ -1,6 +1,7 @@
 jQuery(document).ready(function() {
     jQuery('.icon-download').click(function() {
         jQuery('.portfolio').ScrollTo({
+            offsetTop: 51,
             duration: 750,
             easing: 'linear'
         });
