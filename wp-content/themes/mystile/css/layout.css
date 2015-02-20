@@ -58,6 +58,7 @@ INDEX
     float: left;
     zoom: 1;
     list-style: none;
+    height: 50px;
   }
   ul.nav li a {
     display: block;
@@ -124,6 +125,7 @@ INDEX
     text-decoration: none;
     color: #fff;
     padding-bottom: 11px;
+    color: #11bad3;
     border-bottom: 1px solid #11bad3;
   }
   #top ul.nav > li.checkout a:hover {
@@ -637,10 +639,7 @@ INDEX
     min-height: 600px;
   }
   #content {
-      background-color: #1f2831;
-      background-image: url('/wp-content/themes/mystile/images/bg.jpg');
-      background-repeat: no-repeat;
-      background-position-x: 50%;
+      background-image: url('/wp-includes/images/overlay.png');
   }
   #sidebar {
     margin-top: 0;

@@ -323,7 +323,7 @@ body {
   background:     -ms-linear-gradient(180deg, #517fa4 10%, #243949 180%); /* IE10 */
   background:      -o-linear-gradient(180deg, #517fa4 10%, #243949 180%); /* Opera 11.10+ */
   background:         linear-gradient(180deg, #517fa4 10%, #243949 180%); /* W3C */
-  background: #1f2831;
+  background: #36465d;
 }
 img {
   vertical-align: bottom;
@@ -521,10 +521,28 @@ ul.nav li a {
   padding: 1.618em;
   position: fixed;
   top: 0;
-  width: 100%;	
+  width: 100%;
   z-index: 999;
   font-family: Helvetica, Arial;
+  -webkit-transition: .50s ease-out;
+  -o-transition: .50s ease-out;
+  transition: .50s ease-out;
 }
+
+.current-menu-item {
+    border-bottom: 1px solid #11bad3;
+}
+.current-menu-item a {
+    color: #11bad3!important;
+}
+
+#top:hover {
+    background: rgba(0,0,0,0.6);
+    -webkit-transition: .50s ease-in;
+    -o-transition: .50s ease-in;
+    transition: .50s ease-in;
+}
+
 #top:after {
   content: "\0020";
   display: block;
@@ -923,7 +941,7 @@ ul.nav li a {
   text-decoration: none;
 }
 .woo-pagination {
-  margin: 0;
+  margin: 0 auto 25px;
   text-align: center;
 }
 .woo-pagination .page-numbers {
@@ -937,11 +955,8 @@ ul.nav li a {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.woo-pagination .page-numbers:hover {
-  background: #fff;
-}
 .woo-pagination .page-numbers.current {
-  background: #ff4800;
+  background: rgba(0,0,0,0.4);
   color: #fff;
   padding: .382em .857em;
 }
@@ -1913,7 +1928,7 @@ dl.variation dd ul {
   display: block;
   font-weight: normal;
   position: absolute;
-  top: .618em;
+  top: 14px;
   font-size: 1em;
   left: .857em;
 }
@@ -1934,12 +1949,13 @@ dl.variation dd ul {
 .woocommerce_message:before,
 .woocommerce-message:before {
   content: ".";
-  color: #84ac50;
+  color: rgba(63, 220, 84, 0.5);
 }
 .woocommerce_message .button,
 .woocommerce-message .button {
   float: right;
   font-size: .857em;
+  margin-right: 0;
 }
 /* 7.2 Products */
 .price del {
@@ -3161,10 +3177,8 @@ strong.product-quantity {
 
 section.portfolio {
     color: #fff;
-    background-color: #1f2831;
-    background-image: url('/wp-content/themes/mystile/images/bg.jpg');
-    background-repeat: no-repeat;
-    background-position-x: 50%;
+    background-image: url('/wp-includes/images/overlay.png');
+    padding-bottom: 30px;
 }
 
 
@@ -3261,6 +3275,7 @@ section.portfolio h1 {
     display:block;
 }
 
+
 footer {
     width: 100%;
     background: -webkit-linear-gradient(90deg, #C04848 10%, #480048 90%); /* Chrome 10+, Saf5.1+ */
@@ -3281,7 +3296,7 @@ footer h2 a {
     background-color: rgba(255,255,255,0.05);
     padding: 0px;
     font-size: 18px;
-    width: 120px;
+    width: 140px;
     margin: 0 auto;
     border-radius: 5px;
 }
@@ -3312,11 +3327,11 @@ span.price {
     width: 100px;
     padding: 8px 15px;
     text-align: center;
-    border-radius: 5px 0 5px 0;
+    border-radius: 0 5px 0 5px;
     font-weight: bolder;
     color: #fff;
     clear: both;
-    float: left;
+    float: right;
 }
 
 .woocommerce-result-count, .woocommerce-ordering {
@@ -3389,9 +3404,20 @@ footer .heart {
     margin: 0 auto;
     color: #fff;
     font-family: Helvetica, Arial;
-    background-color: rgba(0,0,0,0.5);
-    padding: 20px;
+    padding: 0px 20px 0;
     border-radius: 5px;
+}
+
+.woocommerce .cart-empty {
+    padding: 25px 15px 0px 15px;
+}
+
+.woocommerce .return-to-shop {
+    padding: 0px 15px 25px 15px;
+}
+
+.entry .woocommerce {
+    background-color: rgba(0,0,0,0.5);
 }
 
 .product .summary {
@@ -3441,6 +3467,7 @@ span.amount {
 
 .woocommerce-message {
     width: 50%;
+    height: 35px;
     /* margin: 25px auto; */
     border-radius: 5px;
     position: relative;
@@ -3451,6 +3478,11 @@ span.amount {
 .woocommerce-message a{
     color: #fff!important;
     margin-top: -3px;
+}
+
+.added {
+    position: relative;
+    top: 5px;
 }
 
 .cart-collaterals, .coupon, #billing_company_field, .shipping_address, .post-edit-link, .woocommerce-tabs {
@@ -3566,7 +3598,7 @@ li#menu-item-96:hover {
     background-color: transparent;
     background: transparent!important;
     background-color: transparent!important;
-    border: none!important;
+    border: none!important
 }
 
 
@@ -3592,4 +3624,5 @@ li#menu-item-96 a:hover {
     -webkit-transition: .50s ease-in;
     -o-transition: .50s ease-in;
     transition: .50s ease-in;
+    color: #fff!important;
 }

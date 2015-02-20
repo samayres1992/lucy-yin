@@ -24,7 +24,7 @@
             <img src="/wp-content/themes/mystile/images/instagram.png" alt="instagram" />
         </a>
     </div>
-    <h2><a href="mailto:lucilleyin@gmail.com?Subject=Work%20Enquiry">Email Me</a></h2>
+    <h2><a href="mailto:lucilleyin@gmail.com?Subject=General%20Enquiry">Email Lucy Yin</a></h2>
 </footer>
 
 
