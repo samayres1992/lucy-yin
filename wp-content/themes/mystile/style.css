@@ -3247,13 +3247,13 @@ section.portfolio h1 {
     border-top: 2px solid #fff;
 }
 
-.portfolio .gallery-image {
+.portfolio .gallery-image, .shop-grid .shop-post img {
     width: 100%;
     height: 400px;
     border-radius: 5px;
 }
 
-.portfolio span.desc {
+.portfolio span.desc, .shop-grid .shop-post h3 {
     width: 100%;
     background-color: rgba(0,0,0, 0.4);
     color: #fff;
@@ -3269,6 +3269,7 @@ section.portfolio h1 {
     display:block;
     font-size: 18px;
     font-family: Helvetica, Arial;
+    margin-bottom: 0;
 }
 
 .portfolio img + span.desc:hover {
@@ -3507,7 +3508,7 @@ table.cart td.actions {
 #payment {
     margin-top: 30px;
 }
-.grid .row div{ 
+.grid .row .portfolio-post{ 
     display:none;
 }
 

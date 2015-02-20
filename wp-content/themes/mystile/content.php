@@ -32,14 +32,14 @@
 				foreach($images as $image) {
 					if($count === 1) {
 						echo('<div class="row">');
-						$slot = '<div class="slot-0-1">';
+						$slot = '<div class="slot-0-1 portfolio-post">';
 					}
 					if ($count === 2) {
-						$slot = '<div class="slot-2-3">';
+						$slot = '<div class="slot-2-3 portfolio-post">';
 					}
 					
 					if ($count === 3) {
-						$slot = '<div class="slot-4-5">';
+						$slot = '<div class="slot-4-5 portfolio-post">';
 					}
 					echo($slot . '<img class="gallery-image" src="'. $image['url'] .'" alt="gallery" />
 							<span class="desc">'. $image['title'] .'</span>

@@ -28,6 +28,7 @@ if ( ! $product || ! $product->is_visible() )
 // Increase loop count
 $woocommerce_loop['loop']++;
 
+
 // Extra post classes
 $classes = array();
 if ( 0 == ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 == $woocommerce_loop['columns'] )
@@ -35,10 +36,8 @@ if ( 0 == ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 
 if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 	$classes[] = 'last';
 ?>
-<div class="shop-products" <?php post_class( $classes ); ?>>
 
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
-
 	<a href="<?php the_permalink(); ?>">
 
 		<?php
@@ -66,5 +65,3 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 	</a>
 
 	<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
-
-</div>
