@@ -28,6 +28,7 @@ if ( ! $product || ! $product->is_visible() )
 // Increase loop count
 $woocommerce_loop['loop']++;
 
+
 // Extra post classes
 $classes = array();
 if ( 0 == ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 == $woocommerce_loop['columns'] )
@@ -35,24 +36,9 @@ if ( 0 == ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 
 if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 	$classes[] = 'last';
 ?>
-<li <?php post_class( $classes ); ?>>
 
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
-
 	<a href="<?php the_permalink(); ?>">
-
-		<?php
-			/**
-			 * woocommerce_before_shop_loop_item_title hook
-			 *
-			 * @hooked woocommerce_show_product_loop_sale_flash - 10
-			 * @hooked woocommerce_template_loop_product_thumbnail - 10
-			 */
-			do_action( 'woocommerce_before_shop_loop_item_title' );
-		?>
-
-		<h3><?php the_title(); ?></h3>
-
 		<?php
 			/**
 			 * woocommerce_after_shop_loop_item_title hook
@@ -62,9 +48,16 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 			 */
 			do_action( 'woocommerce_after_shop_loop_item_title' );
 		?>
-
+		<span class="product-title"><?php the_title(); ?></span>
+		<?php
+			/**
+			 * woocommerce_before_shop_loop_item_title hook
+			 *
+			 * @hooked woocommerce_show_product_loop_sale_flash - 10
+			 * @hooked woocommerce_template_loop_product_thumbnail - 10
+			 */
+			do_action( 'woocommerce_before_shop_loop_item_title' );
+		?>
 	</a>
 
 	<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
-
-</li>

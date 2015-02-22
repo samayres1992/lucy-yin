@@ -1,3 +1,8 @@
+<section class="contact-form">
+    <span class="x">&#10006;</span>
+    <?php echo do_shortcode( '[contact-form-7 id="84" title="Contact Form"]'); ?>
+</section>
+
 <footer>
     <div class="creds">
         <i class="icon-heart heart"></i>
@@ -19,6 +24,7 @@
             <img src="/wp-content/themes/mystile/images/instagram.png" alt="instagram" />
         </a>
     </div>
+    <h2><a href="mailto:lucilleyin@gmail.com?Subject=General%20Enquiry">Email Lucy Yin</a></h2>
 </footer>
 
 

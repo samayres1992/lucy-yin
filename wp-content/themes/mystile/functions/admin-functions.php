@@ -2497,8 +2497,8 @@ if ( ! function_exists( 'woo_pagination' ) ) {
 			'total' => $max_num_pages,
 			'current' => $current,
 			'prev_next' => true,
-			'prev_text' => __( '&larr; Previous', 'woothemes' ), // Translate in WordPress. This is the default.
-			'next_text' => __( 'Next &rarr;', 'woothemes' ), // Translate in WordPress. This is the default.
+			'prev_text' => __( '&larr;', 'woothemes' ), // Translate in WordPress. This is the default.
+			'next_text' => __( '&rarr;', 'woothemes' ), // Translate in WordPress. This is the default.
 			'show_all' => false,
 			'end_size' => 1,
 			'mid_size' => 1,

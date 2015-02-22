@@ -30,9 +30,7 @@ get_header( 'shop' ); ?>
 		<?php endif; ?>
 
 		<?php do_action( 'woocommerce_archive_description' ); ?>
-
 		<?php if ( have_posts() ) : ?>
-
 			<?php
 				/**
 				 * woocommerce_before_shop_loop hook
@@ -41,16 +39,40 @@ get_header( 'shop' ); ?>
 				 * @hooked woocommerce_catalog_ordering - 30
 				 */
 				do_action( 'woocommerce_before_shop_loop' );
+				$count = 1;
 			?>
-
 			<?php woocommerce_product_loop_start(); ?>
 
 				<?php woocommerce_product_subcategories(); ?>
-
+				
 				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php wc_get_template_part( 'content', 'product' ); ?>
-
+				<?php
+					if($count === 1) {
+						echo('<div class="row">');
+						$slot = '<div class="slot-0-1 shop-post">';
+					}
+					if ($count === 2) {
+						$slot = '<div class="slot-2-3 shop-post">';
+					}
+					
+					if ($count === 3) {
+						$slot = '<div class="slot-4-5 shop-post">';
+					}
+					echo($slot);
+					?>
+					
+				   <?php wc_get_template_part( 'content', 'product' ); ?>
+					
+					<?php
+					echo('</div>');
+					if ($count === 3) {
+						echo('</div>');
+					}
+					$count++;
+					if($count === 4) {
+						$count = 1;
+					}
+				?>
 				<?php endwhile; // end of the loop. ?>
 
 			<?php woocommerce_product_loop_end(); ?>

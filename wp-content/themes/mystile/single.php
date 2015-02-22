@@ -63,7 +63,7 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 	                
 		                <h1><?php the_title(); ?></h1>
 		                
-	                	<?php woo_post_meta(); ?>
+                        <?php echo the_content(); ?>
 	                	
 	                </header>
 	                
@@ -85,7 +85,7 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
             <?php
             	// Determine wether or not to display comments here, based on "Theme Options".
             	if ( isset( $woo_options['woo_comments'] ) && in_array( $woo_options['woo_comments'], array( 'post', 'both' ) ) ) {
-            		comments_template();
+            	
             	}
 
 				} // End WHILE Loop

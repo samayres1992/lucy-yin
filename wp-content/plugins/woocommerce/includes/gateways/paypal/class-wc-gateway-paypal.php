@@ -146,14 +146,14 @@ class WC_Gateway_Paypal extends WC_Payment_Gateway {
 		if ( is_array( $icon ) ) {
 			$icon_html = '';
 			foreach ( $icon as $i ) {
-				$icon_html .= '<img src="' . esc_attr( $i ) . '" alt="PayPal Acceptance Mark" />';
+				// $icon_html .= '<img src="' . esc_attr( $i ) . '" alt="PayPal Acceptance Mark" />';
 			}
 		} else {
-			$icon_html = '<img src="' . esc_attr( apply_filters( 'woocommerce_paypal_icon', $icon ) ) . '" alt="PayPal Acceptance Mark" />';
+			// $icon_html = '<img src="' . esc_attr( apply_filters( 'woocommerce_paypal_icon', $icon ) ) . '" alt="PayPal Acceptance Mark" />';
 		}
 
 		if ( $link ) {
-			$what_is_paypal = sprintf( '<a href="%1$s" class="about_paypal" onclick="javascript:window.open(\'%1$s\',\'WIPaypal\',\'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700\'); return false;" title="' . esc_attr__( 'What is PayPal?', 'woocommerce' ) . '">' . esc_attr__( 'What is PayPal?', 'woocommerce' ) . '</a>', esc_url( $link ) );
+			$what_is_paypal = sprintf( '<a href="%1$s" class="about_paypal" onclick="javascript:window.open(\'%1$s\',\'WIPaypal\',\'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700\'); return false;" title="' . esc_attr__( '', 'woocommerce' ) . '">' . esc_attr__( '', 'woocommerce' ) . '</a>', esc_url( $link ) );
 		} else {
 			$what_is_paypal = '';
 		}
@@ -213,7 +213,7 @@ class WC_Gateway_Paypal extends WC_Payment_Gateway {
 				'type'        => 'text',
 				'desc_tip'    => true,
 				'description' => __( 'This controls the description which the user sees during checkout.', 'woocommerce' ),
-				'default'     => __( 'Pay via PayPal; you can pay with your credit card if you don\'t have a PayPal account.', 'woocommerce' )
+				'default'     => __( '', 'woocommerce' )
 			),
 			'email' => array(
 				'title'       => __( 'PayPal Email', 'woocommerce' ),

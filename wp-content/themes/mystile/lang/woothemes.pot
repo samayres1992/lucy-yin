@@ -199,7 +199,7 @@ msgid "Century Gothic"
 msgstr ""
 
 #: functions/admin-functions.php:2500
-msgid "&larr; Previous"
+msgid "&larr;"
 msgstr ""
 
 #: functions/admin-functions.php:2501
