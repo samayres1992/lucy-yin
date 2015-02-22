@@ -126,14 +126,13 @@ INDEX
     color: #fff;
     padding-bottom: 11px;
     color: #11bad3;
-    border-bottom: 1px solid #11bad3;
+    border-top: 1px solid #11bad3;
   }
   #top ul.nav > li.checkout a:hover {
       padding-bottom: 9px;
   }
   #top ul.nav > li:hover {
     background: rgba(0,0,0,0.2);
-    border-bottom: 2px solid rgba(0,0,0,0.4);
     height: 49px;
   }
   #top ul.nav ul {
@@ -187,7 +186,7 @@ INDEX
 #top .wc-nav li.cart a:hover {
     padding-top: 12px;
     padding-bottom: 8px;
-    border-bottom: 1px solid #11bad3;
+    border-top: 1px solid #11bad3;
     }
   #top .wc-nav li.cart a .contents {
         padding: 7px 14px;

@@ -41,8 +41,8 @@
 					if ($count === 3) {
 						$slot = '<div class="slot-4-5 portfolio-post">';
 					}
-					echo($slot . '<img class="gallery-image" src="'. $image['url'] .'" alt="gallery" />
-							<span class="desc">'. $image['title'] .'</span>
+					echo($slot . '<span class="desc">'. $image['title'] .'</span>
+							<img class="gallery-image" src="'. $image['url'] .'" alt="gallery" />
 						</div>
 					');
 					if ($count === 3) {

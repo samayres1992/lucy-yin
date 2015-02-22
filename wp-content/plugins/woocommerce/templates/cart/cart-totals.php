@@ -17,11 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 	<table cellspacing="0">
 
-		<tr class="cart-subtotal">
-			<th><?php _e( 'Cart Subtotal', 'woocommerce' ); ?></th>
-			<td><?php wc_cart_totals_subtotal_html(); ?></td>
-		</tr>
-
 		<?php foreach ( WC()->cart->get_coupons( 'cart' ) as $code => $coupon ) : ?>
 			<tr class="cart-discount coupon-<?php echo esc_attr( $code ); ?>">
 				<th><?php wc_cart_totals_coupon_label( $coupon ); ?></th>
