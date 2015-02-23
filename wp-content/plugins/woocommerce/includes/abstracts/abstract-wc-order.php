@@ -1673,13 +1673,6 @@ abstract class WC_Abstract_Order {
 
 		$total_rows = array();
 
-		if ( $subtotal = $this->get_subtotal_to_display( false, $tax_display ) ) {
-			$total_rows['cart_subtotal'] = array(
-				'label' => __( 'Cart Subtotal:', 'woocommerce' ),
-				'value'	=> $subtotal
-			);
-		}
-
 		if ( $this->get_cart_discount() > 0 ) {
 			$total_rows['cart_discount'] = array(
 				'label' => __( 'Cart Discount:', 'woocommerce' ),
@@ -1744,13 +1737,6 @@ abstract class WC_Abstract_Order {
 			$total_rows['order_discount'] = array(
 				'label' => __( 'Order Discount:', 'woocommerce' ),
 				'value'	=> '-' . $this->get_order_discount_to_display()
-			);
-		}
-
-		if ( $this->get_total() > 0 ) {
-			$total_rows['payment_method'] = array(
-				'label' => __( 'Payment Method:', 'woocommerce' ),
-				'value' => $this->payment_method_title
 			);
 		}
 

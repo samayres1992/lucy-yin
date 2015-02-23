@@ -10,7 +10,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 if ( $order ) : ?>
-
+<div class="checkout-complete">
 	<?php if ( $order->has_status( 'failed' ) ) : ?>
 
 		<p><?php _e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction.', 'woocommerce' ); ?></p>
@@ -30,9 +30,9 @@ if ( $order ) : ?>
 		</p>
 
 	<?php else : ?>
-
-		<p><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></p>
-
+		<div class="success-container">
+			<span class="checkout-success"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you, your order has been received.', 'woocommerce' ), $order ); ?></span>
+		</div>
 		<ul class="order_details">
 			<li class="order">
 				<?php _e( 'Order:', 'woocommerce' ); ?>
@@ -54,7 +54,6 @@ if ( $order ) : ?>
 			<?php endif; ?>
 		</ul>
 		<div class="clear"></div>
-
 	<?php endif; ?>
 
 	<?php do_action( 'woocommerce_thankyou_' . $order->payment_method, $order->id ); ?>
@@ -62,6 +61,7 @@ if ( $order ) : ?>
 
 <?php else : ?>
 
-	<p><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), null ); ?></p>
+	<p><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you, your order has been received.', 'woocommerce' ), null ); ?></p>
 
 <?php endif; ?>
+</div>
