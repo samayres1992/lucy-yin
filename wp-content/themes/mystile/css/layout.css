@@ -31,7 +31,7 @@ INDEX
 */
 /*----------------------*/
 /*----------------------*/
-@media only screen and (min-width: 768px) {
+
   html.boxed {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGAwBuKzQAwGjDAGNgGwSgwVAFCGAgUGpiTrAAAAAElFTkSuQmCC) #e6e6e6;
   }
@@ -95,6 +95,17 @@ INDEX
     visibility: visible;
     display: block;
   }
+  button, a.button, table.cart td.actions .button {
+    -webkit-transition: .50s ease-out;
+    -o-transition: .50s ease-out;
+    transition: .50s ease-out;
+  }
+  button:hover, a.button:hover, table.cart td.actions .button:hover {
+    background-color: rgba(63, 220, 84, 0.2)!important;
+    -webkit-transition: .50s ease-in;
+    -o-transition: .50s ease-in;
+    transition: .50s ease-in;
+  }
   /* 2. TOP NAVIGATION (Add top navigation presentational styles here) */
   #top {
     background: rgba(0,0,0,0.4);
@@ -116,8 +127,6 @@ INDEX
     color: #fff;
   }
   #top ul.nav > li.checkout a {
-      padding-top: 14px;
-      padding-bottom: 10px;
       color: #fff;
   }
   #top ul.nav > li a:hover {
@@ -127,6 +136,12 @@ INDEX
     padding-bottom: 11px;
     color: #11bad3;
     border-top: 1px solid #11bad3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #top ul.nav > li.current-menu-item a:hover{
+      border-top: none!important;
+      padding-top: 12px;
   }
   #top ul.nav > li.checkout a:hover {
       padding-bottom: 9px;
@@ -179,18 +194,18 @@ INDEX
     text-align: right;
   }
   #top .wc-nav li.cart a {
-      padding-top: 12px;
+      padding-top: 11px;
       padding-bottom: 10px;
   }
 }
 #top .wc-nav li.cart a:hover {
-    padding-top: 12px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-top: 1px solid #11bad3;
     }
   #top .wc-nav li.cart a .contents {
         padding: 7px 14px;
-        background: rgba(0,0,0,0.5);
+        background: rgba(255,255,255,0.05);
         color: #fff;
         -webkit-border-radius: 1em;
         border-radius: 1em;
@@ -711,13 +726,33 @@ INDEX
     height: 400px;
     width: 384px;
     margin-left: 10%;
-    margin-top: 100px;
+    margin-top: 150px;
 
   }
   .single-product .summary {
     width: 48%;
     float: right;
-    margin-top: 100px;
+    margin-top: 150px;
+  }
+  #content .woocommerce-message {
+       width: 50%;
+       /* height: 30px; */
+       margin: 0 auto;
+       border-radius: 5px;
+       position: absolute;
+       top: 70px;
+       left: 25%;
+       padding: 10px 15px 10px 45px;
+   }
+  article .woocommerce-message {
+      width: 50%;
+      /* height: 30px; */
+      margin: 0 auto;
+      border-radius: 5px;
+      position: absolute;
+      top: 130px!important;
+      left: 25%;
+      padding:  14px 15px 10px 45px!important;
   }
   .single-product .woocommerce_tabs,
   .single-product .woocommerce-tabs {
@@ -975,4 +1010,3 @@ INDEX
     position: relative;
     z-index: 9999999;
   }
-}

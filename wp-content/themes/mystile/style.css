@@ -522,6 +522,7 @@ ul.nav li a {
   -webkit-transition: .50s ease-out;
   -o-transition: .50s ease-out;
   transition: .50s ease-out;
+  font-size: 16px!important;
 }
 
 .current-menu-item {
@@ -575,9 +576,6 @@ ul.nav li a {
   width: 48%;
   float: left;
   text-align: left;
-}
-#top .wc-nav li.cart a {
-  padding-top: .25em;
 }
 #top .wc-nav li.cart a:before {
   font-family: 'WebSymbolsRegular';
@@ -2405,6 +2403,14 @@ h3{
     font-family: Helvetica, Arial!important;
     font-size: 26px;
 }
+
+
+.checkout-complete h2{ 
+    color: #fff;
+    font-family: Helvetica, Arial!important;
+    font-size: 26px;
+    padding-top: 30px;
+}
 .checkout #order_review #payment ul li label {
   font-weight: bold;
   margin-bottom: .618em;
@@ -2479,10 +2485,12 @@ h3{
   left: .857em;
 }
 ul.order_details {
-  border: 1px solid #e8e4e3;
   list-style: none;
   padding-left: 1.618em;
   position: relative;
+  background-color: rgba(255,255,255,0.03);
+  border-radius: 5px;
+  color: #fff;
 }
 ul.order_details:after {
   content: "\0020";
@@ -2495,16 +2503,16 @@ ul.order_details li {
   padding: 1em 2em 1em 0;
   margin-right: 2em;
   float: left;
-  border-right: 1px solid #e8e4e3;
+  border-right: 1px solid rgba(255,255,255,0.05);
   text-transform: uppercase;
   font-size: .857em;
-  color: #9f9693;
+  color: #fff;
 }
 ul.order_details li strong {
   display: block;
   text-transform: none;
   font-size: 1.387em;
-  color: #6c6360;
+  color: #fff;
 }
 ul.order_details li:last-child {
   border-right: 0;
@@ -2517,10 +2525,10 @@ ul.order_details:before {
   font-weight: normal;
   content: "/";
   position: absolute;
-  top: .327em;
+  top: 30px;
   right: .618em;
   font-size: 2.244em;
-  color: #84ac50;
+  color: rgba(63, 220, 84, 0.5);
 }
 /* 7.5 Widgets */
 .widget ul li .count {
@@ -3207,7 +3215,7 @@ section.entry {
     /* margin-bottom: 50px; */
     /* margin-top: 50px; */
     width: 100%;
-    margin: 51px auto 50px;
+    margin: 51px auto 100px;
     color: #fff;
     height: 41px;
     padding: 11px 0 0 0;
@@ -3469,12 +3477,13 @@ span.amount {
 
 .woocommerce-message {
     width: 50%;
-    height: 35px;
+    /* height: 30px; */
     /* margin: 25px auto; */
     border-radius: 5px;
-    position: relative;
-    top: 80px;
+    position: absolute;
+    top: 125px;
     left: 25%;
+    padding: 15px 45px;
 }
 
 .woocommerce-message a{
@@ -3629,7 +3638,7 @@ li#menu-item-96 a:hover {
     color: #fff!important;
 }
 
-#order_review th.product-name, #order_review th.product-total {
+#order_review th.product-name, #order_review th.product-total, .checkout-complete .shop_table th.product-name, .checkout-complete .shop_table th.product-total {
   background-color: rgba(54, 70, 93, 0.4);
 }
 
@@ -3637,11 +3646,11 @@ li#menu-item-96 a:hover {
     padding-top: 18px;
 }
 
-#order_review th.product-name {
+#order_review th.product-name, .checkout-complete .shop_table th.product-name {
   border-radius: 5px 0 0 0;
 }
 
-#order_review th.product-total {
+#order_review th.product-total, .checkout-complete .shop_table th.product-total {
     border-radius: 0 5px 0 0;
 } 
 
@@ -3653,7 +3662,7 @@ li#menu-item-96 a:hover {
     border-bottom: none;
 }
 
-#order_review td, #order_review th {
+#order_review td, #order_review th, .checkout-complete .shop_table th , .checkout-complete .shop_table td {
     text-align: center;
     width: 50%;
 }
@@ -3661,4 +3670,46 @@ li#menu-item-96 a:hover {
 #order_review_heading {
     padding-top: 30px;
     border-top: 3px solid rgba(255,255,255,0.05);
+}
+
+.notfound {
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+span.checkout-success {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  width: 80%;
+  margin: 30px auto;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.success-container {
+    padding: 10px 0 30px;
+}
+
+.addresses {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.addresses header {
+    float: none!important;
+}
+
+.addresses header.title h3{
+    text-align: center;
+    float: none!important;
+}
+
+dl.customer_details {
+  display: none;
 }

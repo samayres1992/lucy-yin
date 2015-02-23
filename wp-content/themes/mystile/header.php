@@ -22,8 +22,8 @@ global $woo_options, $woocommerce;
 
 <title><?php woo_title(''); ?></title>
 <?php woo_meta(); ?>
-<link rel="stylesheet" href="/wp-includes/css/reset.css" media="screen and (min-width: 1236px)" >
-<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" media="screen" />
+<link rel="stylesheet" href="/wp-includes/css/reset.css" >
+<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" media="all" />
 <link rel="stylesheet" href="/wp-content/themes/mystile/css/base.css" type="text/css" media="all">
 <!--[if lt IE 9 ]><link rel="stylesheet" href="./css/720_grid.css" type="text/css"><![endif]-->
 <link rel="stylesheet" href="/wp-content/themes/mystile/css/720_grid.css" type="text/css" media="screen and (min-width: 720px)">
