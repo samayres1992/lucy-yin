@@ -11,18 +11,18 @@ if ( ! function_exists( 'woothemes_add_javascript' ) ) {
 	function woothemes_add_javascript() {
 		global $woo_options;
 
-		wp_register_script( 'prettyPhoto', get_template_directory_uri() . '/includes/js/jquery.prettyPhoto.js', array( 'jquery' ) );
-		wp_register_script( 'enable-lightbox', get_template_directory_uri() . '/includes/js/enable-lightbox.js', array( 'jquery', 'prettyPhoto' ) );
-		wp_enqueue_script( 'third party', get_template_directory_uri() . '/includes/js/third-party.js', array( 'jquery' ) );
-		wp_enqueue_script( 'general', get_template_directory_uri() . '/includes/js/general.js', array( 'jquery' ) );
-		wp_register_script( 'google-maps', 'http://maps.google.com/maps/api/js?sensor=false' );
-		wp_register_script( 'google-maps-markers', get_template_directory_uri() . '/includes/js/markers.js' );
+		// wp_register_script( 'prettyPhoto', get_template_directory_uri() . '/includes/js/jquery.prettyPhoto.js', array( 'jquery' ) );
+		// wp_register_script( 'enable-lightbox', get_template_directory_uri() . '/includes/js/enable-lightbox.js', array( 'jquery', 'prettyPhoto' ) );
+		// wp_enqueue_script( 'third party', get_template_directory_uri() . '/includes/js/third-party.js', array( 'jquery' ) );
+		// wp_enqueue_script( 'general', get_template_directory_uri() . '/includes/js/general.js', array( 'jquery' ) );
+		// wp_register_script( 'google-maps', 'http://maps.google.com/maps/api/js?sensor=false' );
+		// wp_register_script( 'google-maps-markers', get_template_directory_uri() . '/includes/js/markers.js' );
 		
 		// Load Google Script on Contact Form Page Template
-		if ( is_page_template( 'template-contact.php' ) ) {
-			wp_enqueue_script( 'google-maps' );
-			wp_enqueue_script( 'google-maps-markers' );
-		} // End If Statement
+		// if ( is_page_template( 'template-contact.php' ) ) {
+		// 	wp_enqueue_script( 'google-maps' );
+		// 	wp_enqueue_script( 'google-maps-markers' );
+		// } // End If Statement
 		
 		do_action( 'woothemes_add_javascript' );
 	} // End woothemes_add_javascript()
