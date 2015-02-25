@@ -91,7 +91,7 @@ if ( ! is_admin() ) { add_action( 'get_header', 'woo_load_frontend_css', 10 ); }
 
 if ( ! function_exists( 'woo_load_frontend_css' ) ) {
 	function woo_load_frontend_css () {
-		wp_register_style( 'woo-layout', get_template_directory_uri() . '/css/layout.css' );
+		// wp_register_style( 'woo-layout', get_template_directory_uri() . '/css/layout.css' );
 
 		wp_enqueue_style( 'woo-layout' );
 	} // End woo_load_frontend_css()
@@ -105,16 +105,16 @@ add_action( 'wp_head', 'woo_load_responsive_meta_tags', 10 );
 
 if ( ! function_exists( 'woo_load_responsive_meta_tags' ) ) {
 	function woo_load_responsive_meta_tags () {
-		$html = '';
-
-		$html .= "\n" . '<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->' . "\n";
-		$html .= '<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />' . "\n";
-
-		/* Remove this if not responsive design */
-		$html .= "\n" . '<!--  Mobile viewport scale | Disable user zooming as the layout is optimised -->' . "\n";
-		$html .= '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">' . "\n";
-
-		echo $html;
+		// $html = '';
+        // 
+		// $html .= "\n" . '<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->' . "\n";
+		// $html .= '<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />' . "\n";
+        // 
+		// /* Remove this if not responsive design */
+		// $html .= "\n" . '<!--  Mobile viewport scale | Disable user zooming as the layout is optimised -->' . "\n";
+		// $html .= '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">' . "\n";
+        // 
+		// echo $html;
 	} // End woo_load_responsive_meta_tags()
 }
 
