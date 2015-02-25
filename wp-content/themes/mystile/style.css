@@ -798,16 +798,12 @@ ul.nav li a {
   display: block;
   text-align: center;
 }
-
-}
 .post .wp-caption,
 .type-page .wp-caption {
   text-align: center;
   background: #fff;
   border: 1px solid #e8e4e3;
   max-width: 100%;
-}
-
 }
 .post .wp-caption img,
 .type-page .wp-caption img {
@@ -1017,8 +1013,6 @@ ul.nav li a {
 }
 .widget_woo_flickr .wrap {
   position: relative;
-}
-
   padding: 0;
 }
 .widget_woo_flickr a img {
@@ -1036,8 +1030,6 @@ ul.nav li a {
 /* CALENDAR */
 #wp-calendar {
   width: 95%;
-}
-
   clear: both;
   padding: 0;
 }
