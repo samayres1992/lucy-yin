@@ -92,7 +92,7 @@ $order = wc_get_order( $order_id );
 <?php do_action( 'woocommerce_order_details_after_order_table', $order ); ?>
 
 <header>
-	<h2><?php _e( 'Customer details', 'woocommerce' ); ?></h2>
+	<h2><?php _e( 'Customer Details', 'woocommerce' ); ?></h2>
 </header>
 <dl class="customer_details">
 <?php

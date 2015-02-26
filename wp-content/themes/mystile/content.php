@@ -25,7 +25,7 @@
 	}
 	?>
 	<section class="portfolio">
-		<h1 id="myportfolio">My Work</h1>
+		<h1 id="mywork" class="portfoliowork">My Work</h1>
 		<div class="grid">
 			<?php
 				$count = 1;

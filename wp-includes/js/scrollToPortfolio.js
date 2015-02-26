@@ -49,7 +49,13 @@ jQuery(document).ready(function() {
         jQuery('.contact-form').show();
     }
     
-    // jQuery(".wpcf7-form").focusout(function() {
-    //     jQuery('.contact-form').fadeOut();
-    // });
+    var target = jQuery('#mywork');
+    var targetHeight = target.outerHeight();
+
+    jQuery(document).scroll(function(e){
+        var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
+        if(scrollPercent >= 0){
+            target.css('opacity', scrollPercent);
+        }
+    });
 });
