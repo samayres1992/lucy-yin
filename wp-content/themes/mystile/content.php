@@ -4,6 +4,9 @@
 				<img class="logo" src="/wp-content/themes/mystile/images/logo.png" />
 				<h1><span class="l">Lucy</span> <span class="y">Yin</span></h2>
 			</span>
+			<h2 class="hello-description">
+				Freelance Artist
+			</h2>
 			<span class="contactme">
 				<i class="icon-download"></i>
 				<!--<i class="icon-envelope"></i>-->
@@ -24,8 +27,8 @@
 		array_push($images, array('url' => $url, 'title' => $title));
 	}
 	?>
-	<section class="portfolio">
-		<h1 id="mywork" class="portfoliowork">My Work</h1>
+	<section class="portfolio portfolio-top">
+		<h1 class="portfoliowork">My Work</h1>
 		<div class="grid">
 			<?php
 				$count = 1;
