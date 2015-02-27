@@ -8,7 +8,7 @@
 ?>
 
 <header class="page-header">
-	<h1 class="page-title"><?php _e( 'Nothing Found', 'FoundationPress' ); ?></h1>
+	<h1 id="mywork" class="page-title"><?php _e( 'Nothing Found', 'FoundationPress' ); ?></h1>
 </header>
 
 <div class="page-content">
