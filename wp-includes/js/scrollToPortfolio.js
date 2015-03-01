@@ -35,7 +35,7 @@ jQuery(document).ready(function() {
     }
     
     if(jQuery('.checkout-container-addresses')) {
-        jQuery('.validate-required input').prop('disabled', true);
+        jQuery('.validate-required input').prop('required', true);
     }
 
     jQuery('.menu-item-96').click(function() {
